@@ -9,6 +9,6 @@ services:
         environment:
             - INFLUXDB_URL = $INFLUXDB_URL
             - INFLUXDB_TOKEN = $INFLUXDB_TOKEN
-            - INFLUXDB_ORG = $INFLUXDB_ORGANIZATION
+            - INFLUXDB_ORGANIZATION = $INFLUXDB_ORGANIZATION
             - INFLUXDB_BUCKET = $INFLUXDB_BUCKET
             - HOSTNAME = $HOSTNAME
