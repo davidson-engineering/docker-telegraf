@@ -7,8 +7,8 @@ services:
             - ./telegraf.conf:/etc/telegraf/telegraf.conf
         restart: unless-stopped
         environment:
-            - INFLUXDB_URL = $INFLUXDB_URL
-            - INFLUXDB_TOKEN = $INFLUXDB_TOKEN
-            - INFLUXDB_ORGANIZATION = $INFLUXDB_ORGANIZATION
-            - INFLUXDB_BUCKET = $INFLUXDB_BUCKET
-            - HOSTNAME = $HOSTNAME
+            - INFLUXDB_URL = ${INFLUXDB_URL}
+            - INFLUXDB_TOKEN = ${INFLUXDB_TOKEN}
+            - INFLUXDB_ORGANIZATION = ${INFLUXDB_ORGANIZATION}
+            - INFLUXDB_BUCKET = ${INFLUXDB_BUCKET}
+            - HOSTNAME = ${HOSTNAME}
