@@ -5,8 +5,7 @@ services:
         image: telegraf:latest
         volumes:
             - ./telegraf.conf:/etc/telegraf/telegraf.conf
-            #  Sync timezone with host
-            - /etc/localtime:/etc/localtime:ro
+            - /etc/localtime:/etc/localtime:ro #Sync timezone with host
         restart: unless-stopped
         env_file:
             - .env
